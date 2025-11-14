@@ -17,7 +17,8 @@
   <div id="jobs"></div>
 
   <script>
-    fetch("/jobs") // relative path
+    fetch("https://jobs-api.onrender.com/jobs")
+ // relative path
       .then(res => res.json())
       .then(data => {
         const container = document.getElementById("jobs");
